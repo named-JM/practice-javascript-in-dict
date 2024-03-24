@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="studentname">
+
+    </p>
+    <p class="message"></p>
+
+    <!-- inside js in html -->
+    <script>
+        const pname = document.querySelector(".studentname");
+        const pmessage = document.querySelector(".message");
+
+        const name = prompt('Enter your name: ');
+        pname.textContent = `Hi, ${name}`;
+        pmessage.textContent = `Welcome to Basic JS for WEB DEV!`;
+    </script>
+</body>
+</html>
