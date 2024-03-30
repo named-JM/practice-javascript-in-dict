@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    <button id="calculate">calculate</button>
+    <button id="clear">Clear </button>
+    <pre id="results"></pre>
+
+    <script>
+        function calculate(){
+            for(let i = 1; i<=10; i++){
+                //string interpolation needs ` this one . and not this one ''
+                const newResult = `${i} x ${i} = ${i*i}`;
+                results.textContent += `${newResult}\n`;
+            }
+            results.textContent += '\n...finished!';
+        }
+
+        const calculateBtn = document.querySelector('#calculate');
+        const clearBtn = document.querySelector('#clear');
+
+        calculateBtn.addEventListener('click', calculate);
+        clearBtn.addEventListener('click', clear => results.textContent ='');
+    </script>
+</body>
+</html>
