@@ -11,20 +11,60 @@
     <pre id="results"></pre>
 
     <script>
-        function calculate(){
-            for(let i = 1; i<=10; i++){
-                //string interpolation needs ` this one . and not this one ''
-                const newResult = `${i} x ${i} = ${i*i}`;
-                results.textContent += `${newResult}\n`;
+        // function calculate(){
+        //     for(let i = 1; i<=10; i++){
+        //         //string interpolation needs ` this one . and not this one ''
+        //         const newResult = `${i} x ${i} = ${i*i}`;
+        //         results.textContent += `${newResult}\n`;
+        //     }
+        //     results.textContent += '\n...finished!';
+        // }
+
+        // const calculateBtn = document.querySelector('#calculate');
+        // const clearBtn = document.querySelector('#clear');
+
+        // calculateBtn.addEventListener('click', calculate);
+        // clearBtn.addEventListener('click', clear => results.textContent ='');
+        
+        // const cats = ['leopard', 'serval', 'jaguar', 'tiger', 'caracal','lion'];
+
+        // for (let i = 0  ; i< cats.length; i++){
+        //     console.log (cats[i]);
+        // }
+
+        // const cats = ['pete', 'biggles','jasmine'];
+        // let myFavoriteCats = 'My Cats are called';
+
+        // for (let i = 0; i<cats.length; i++){
+        //     if (i=== cats.length == 1){
+        //         myFavoriteCats = `${myFavoriteCats}and ${cats[i]}`;
+
+        //     }
+        //     else {
+        //         myFavoriteCats = `${myFavoriteCats} ${cats[i]}`;
+        //     }
+            
+        // }
+        // console.log(myFavoriteCats);
+
+        const cats = ['pete ', 'biggles','jasmine'];
+        let myFavoriteCats = 'My Cats are called ';
+        
+        let i = 1;
+
+        while(i<cats.length){
+            if(i === cats.length - 1){
+                myFavoriteCats += ` and ${cats[i]}`;
+
+            }else {
+                myFavoriteCats += `${cats[i]}`;
             }
-            results.textContent += '\n...finished!';
+            i++
         }
 
-        const calculateBtn = document.querySelector('#calculate');
-        const clearBtn = document.querySelector('#clear');
-
-        calculateBtn.addEventListener('click', calculate);
-        clearBtn.addEventListener('click', clear => results.textContent ='');
+        console.log (myFavoriteCats);
+        
+    
     </script>
 </body>
 </html>
