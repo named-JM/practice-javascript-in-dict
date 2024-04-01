@@ -22,19 +22,44 @@
         cursor: pointer;
     }
 
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+}
+.container{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/* #text{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+} */
 </style>
 <body>
     <!-- <p>Player 1: Chris</p> -->
 
-    <label for="weather">Select the weather type today: </label>
-    <select id="weather">
-        <option value="">Make a choice</option>
-        <option value="sunny">sunny</option>
-        <option value="rainy">rainy</option>
-        <option value="snowing">snowing</option>
-        <option value="overcast">OverCast</option>
-    </select>
-    <p></p>
+    <div class="container">
+        <label for="weather" id="text">Select the weather type today: </label>
+        <select id="weather">
+            <option value="">Make a choice</option>
+            <option value="sunny">sunny</option>
+            <option value="rainy">rainy</option>
+            <option value="snowing">snowing</option>
+            <option value="overcast">OverCast</option>
+        </select><br><br><br><br><br><br>
+        <p></p>
+
+    </div>
+ 
 
     <script src="script.js">    </script>
 </body>
